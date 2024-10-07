@@ -1,20 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package dolgozatmvc;
+package main;
 
-/**
- *
- * @author kocsi.dorottya
- */
+import modell.AutoModell;
+import nezet.FelugroNezetA;
+import vezerlo.FelugroVezerloA;
+
+
 public class DolgozatMVC {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+      AutoModell modell = new AutoModell();
+      
+      FelugroNezetA nezet = new FelugroNezetA();
+      new FelugroVezerloA(modell,nezet);
     }
     
 }
